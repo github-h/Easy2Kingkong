@@ -31,9 +31,24 @@
 
 此脚本运行一次后就不用再打开了
 ## 下载
-[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)
+[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/[度盘](https://pan.baidu.com/s/1_f3ImQljRox7tnxFu-Z0aA)  提取码: aili
 
 ## 补充
+
+至于弹幕问题再次解释一下  
+
+**是官方的问题！是官方的问题！真的是官方的问题！**
+
+PC端只能看到来自PC端的弹幕
+
+手机端可以看到全部弹幕
+
+这个限制就类似于之前大陆和弯弯弹幕不互通的样子
+
+*智障官方没有办法*
+
+不过貌似主播自己可以看到全部弹幕（待求证）
+
 喜欢UP的话记得【点个关注】并且【一键三连】啊
 
 ## 碎碎念
