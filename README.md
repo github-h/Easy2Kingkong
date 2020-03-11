@@ -33,7 +33,7 @@ www.kingkong.com.tw 上的图片可能无法正常显示，这个我试了好久
 
 此脚本【运行一次】后就不用再打开了
 ## 下载
-[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/[度盘] 提取码: aili
+[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/[度盘](http://pan.baidu.com/s/16yTNqqLN1Tk5fF10NBFs6A) 提取码: aili
 
 ## 补充
 
@@ -62,6 +62,6 @@ www.kingkong.com.tw 上的图片可能无法正常显示，这个我试了好久
 
 还顺手写了一个小玩意
 
-[黎明杀机【解锁帧数】和【解决当前杀鸡画质高糊】的问题（也就是关闭默认抗锯齿的效果）](https://github.com/g1thub-h/Patch_DBD)
+[修复黎明杀机【解锁帧数】和【解决当前杀鸡画质高糊】的问题（也就是关闭默认抗锯齿的效果）](https://github.com/g1thub-h/Patch_DBD)
 
 喜欢的别忘记点个⭐
