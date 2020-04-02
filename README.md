@@ -33,7 +33,7 @@ www.kingkong.com.tw 上的图片可能无法正常显示，这个我试了好久
 
 此脚本【运行一次】后就不用再打开了
 ## 下载
-[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/[度盘] 提取码: aili
+[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/[度盘](https://pan.baidu.com/s/1Wv73gyQkE2HVVhewhbgFWA) 提取码: aili
 
 ## 补充
 
