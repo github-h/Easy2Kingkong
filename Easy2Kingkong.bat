@@ -9,7 +9,7 @@ color 0A
 )
 
 echo --------------------------------------------------------------------------
-echo 本脚本由付导的录播组制作  当前版本为 V1.8 (20200303)
+echo 本脚本由付导的录播组制作  当前版本为 V1.9 (20200403)
 echo.&echo 请勿二改 大量传播 本脚本只解决当前的DNS污染问题
 echo.&echo 该脚本失效可以在 GitHub 上提交 Issues
 echo.&echo 最新脚本将在群动态、UP视频简介和 Github 同步推送
@@ -26,15 +26,15 @@ set file=C:\Windows\System32\Drivers\etc\hosts
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-set a=99.86.144.37 www.kingkong.com.tw
-set b=54.230.173.113 m.kingkong.com.tw
-set c=54.192.151.109 static.kingkong.com.tw
-set d=99.84.142.111 img.kingkong.com.tw
+set a=54.192.151.74 www.kingkong.com.tw
+set b=13.227.254.99 m.kingkong.com.tw
+set c=13.226.77.11 static.kingkong.com.tw
+set d=54.192.151.124 img.kingkong.com.tw
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-set e=99.86.144.93 www.kingkongapp.com
-set f=54.192.151.72 static.kingkongapp.com
+set e=54.192.151.14 www.kingkongapp.com
+set f=13.225.176.65 static.kingkongapp.com
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-set g=99.86.144.109 api.kingkongapp.com
+set g=99.84.142.122 api.kingkongapp.com
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 set h=103.210.23.233 cht.ws.kingkong.com.tw
 set i=23.91.101.80 cht-1.ws.kingkong.com.tw
@@ -68,9 +68,11 @@ exit
 cls
 echo.&echo 金刚直播主页有www.kingkong.com.tw 和 www.kingkongapp.com
 echo.&echo 这两个看到的是相同的直播内容，请根据自己喜好选择
+echo.&echo （推荐使用www.kingkongapp.com）
+echo.&echo 如果上面的能【正常使用】就【别优化】,如果不能再根据需要去【选择】
 echo.&echo 选项 1 和 2 仅仅对主页优化，您【可能】需要配合选项 3 和 4 一起使用获得完整体验
 echo --------------------------------------------------------------------------
-echo.&echo 请选择要操作的选项（建议用过【先前版本】的先运行 7 再运行其他的）
+echo.&echo 请选择要操作的选项（用过【先前版本】必须先运行 7 再运行其他的）
 echo.&echo 1.优化 www.kingkong.com.tw 主页
 echo.&echo 2.优化 www.kingkongapp.com 主页
 echo.&echo 3.优化api接口 (如果无法查看【登录框】请运行这个，能查看就别选这个)
