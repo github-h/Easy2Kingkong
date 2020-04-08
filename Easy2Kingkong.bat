@@ -9,10 +9,10 @@ color 0A
 )
 
 echo --------------------------------------------------------------------------
-echo ±¾½Å±¾ÓÉ¸¶µ¼µÄÂ¼²¥×éÖÆ×÷  µ±Ç°°æ±¾Îª V1.9 (20200403)
+echo ±¾½Å±¾ÓÉ¸¶µ¼µÄÂ¼²¥×éÖÆ×÷  µ±Ç°°æ±¾Îª V2.0 (20200408)
 echo.&echo ÇëÎð¶þ¸Ä ´óÁ¿´«²¥ ±¾½Å±¾Ö»½â¾öµ±Ç°µÄDNSÎÛÈ¾ÎÊÌâ
 echo.&echo ¸Ã½Å±¾Ê§Ð§¿ÉÒÔÔÚ GitHub ÉÏÌá½» Issues
-echo.&echo ×îÐÂ½Å±¾½«ÔÚÈº¶¯Ì¬¡¢UPÊÓÆµ¼ò½éºÍ Github Í¬²½ÍÆËÍ
+echo.&echo ×îÐÂ½Å±¾½«ÔÚ¸öÈËÖÃ¶¥¶¯Ì¬¡¢UPÊÓÆµ¼ò½é¡¢ÈºÎÄ¼þºÍ Github Í¬²½ÍÆËÍ
 echo.
 echo --------------------------------------------------------------------------
 echo.&echo ·²ÊÇÌáÊ¾¾Ü¾ø·ÃÎÊµÄ¶¼ÊÇÃ»ÓÐÒÔ¹ÜÀíÔ±Ä£Ê½¿ªÆô£¡£¡£¡
@@ -34,7 +34,7 @@ set d=54.192.151.124 img.kingkong.com.tw
 set e=54.192.151.14 www.kingkongapp.com
 set f=13.225.176.65 static.kingkongapp.com
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-set g=99.84.142.122 api.kingkongapp.com
+set g=13.249.171.117 api.kingkongapp.com
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 set h=103.210.23.233 cht.ws.kingkong.com.tw
 set i=23.91.101.80 cht-1.ws.kingkong.com.tw
@@ -66,7 +66,378 @@ exit
 
 :Start
 cls
-echo.&echo ½ð¸ÕÖ±²¥Ö÷Ò³ÓÐwww.kingkong.com.tw ºÍ www.kingkongapp.com
+
+echo.&echo ÎªÁËÊ¹¸ü¶àÈËÄÜÕýÈ·Ê¹ÓÃ¸Ã½Å±¾£¬ÌØÍÆ³öÏòµ¼Ä£Ê½
+echo.&echo Ïòµ¼Ä£Ê½½«Ò»²½²½µÄ½ÌÄúÅÐ¶ÏÊÇ·ñ¸ÃÆôÓÃÄ³¸ö¹¦ÄÜ
+echo.&echo Í¬Ê±Ò²±£ÁôÁËÔ­À´µÄ²Ëµ¥Ä£Ê½£¬±ãÓÚ¶®µÃ½Å±¾Ô­ÀíµÄÈË¿ìËÙ²Ù×÷
+echo.&echo Çë×¢Òâ£¡£¡£¡
+echo.&echo Èç¹ûÄúÊÇµÚÒ»´ÎÊ¹ÓÃ¸Ã½Å±¾£¬»òÕßÔÚÖ®Ç°½Å±¾ÖÐ²¢²»ÖªµÀ¸ÃÊäÈëÊ²Ã´£¬ÇëÊ¹ÓÃÏòµ¼Ä£Ê½
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡ÔñÄúÒª½øÈëµÄÄ£Ê½
+echo.&echo 1.Ïòµ¼Ä£Ê½ £¨ÍÆ¼öÊ¹ÓÃ£©
+echo.&echo 2.²Ëµ¥Ä£Ê½
+echo.&set /p choice=ÊäÈëÊý×Öºó»Ø³µ£º
+
+if %choice%==1 goto Guide0
+if %choice%==2 goto Meun
+if %choice%==debug goto Debug
+goto Start
+
+:Guide0
+cls
+
+echo.&echo ÇëÎÊÄúÖ®Ç°ÊÇ·ñÊ¹ÓÃ¸Ã½Å±¾µÄ¡¾ÏÈÇ°°æ±¾¡¿
+echo.&echo Ñ¡Ôñ Y ½«»Ö¸´Ô­Ê¼hostsÎÄ¼þ
+echo.&echo ÇëÀí½â£¬ÎªÁËÊ¹½Å±¾ÉúÐ§£¬»Ö¸´Ô­Ê¼hostsÎÄ¼þÊÇ±Ø²»¿ÉÉÙµÄ
+echo.&echo Èç¹ûÄú²»ÖªµÀ»òÕßÍü¼ÇÁË£¬Ò²½¨ÒéÄúÑ¡Ôñ Y »Ö¸´Ò»ÏÂ
+echo --------------------------------------------------------------------------
+echo.&echo Y.ÊÇµÄ£¬ÎÒÊ¹ÓÃ¹ý
+echo.&echo N.²»£¬ÎÒÊÇµÚÒ»´ÎÊ¹ÓÃ£¨Èç¹û×îºóÃ»ÉúÐ§£¬ÇëÊ¹ÓÃ Y À´»Ö¸´£©
+echo.&set /p choice=ÊäÈë Y »ò N ºó»Ø³µ£º
+
+if %choice%==y goto G-Restore
+if %choice%==Y goto G-Restore
+if %choice%==n goto Guide1
+if %choice%==N goto Guide1
+goto Guide0
+
+:Guide1
+cls
+
+echo.&echo ½ð¸ÕÖ±²¥Ö÷Ò³ÓÐ www.kingkong.com.tw ºÍ www.kingkongapp.com
+echo.&echo ÕâÁ½¸ö¿´µ½µÄÊÇÏàÍ¬µÄÖ±²¥ÄÚÈÝ£¬Çë¸ù¾Ý×Ô¼ºÏ²ºÃÑ¡Ôñ
+echo.&echo £¨ÍÆ¼öÊ¹ÓÃwww.kingkongapp.com£©
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡ÔñÄúÒªÊ¹ÓÃµÄÍøÕ¾
+echo.&echo 1.www.kingkongapp.com£¨ÍÆ¼öÊ¹ÓÃ£©
+echo.&echo 2.www.kingkong.com.tw£¨ºÜ¿ÉÄÜÓÅ»¯ÁËÒ²ÎÞ·¨·ÃÎÊ£©
+echo.&set /p choice=ÊäÈëÊý×Öºó»Ø³µ£º
+
+if %choice%==1 goto kingkongapp
+if %choice%==2 goto kingkongtw
+goto Guide1
+
+:Guide2
+cls
+color 0A
+echo.&echo ¹§Ï²Äú£¬ÄúÏÖÔÚ¿ÉÒÔÕý³£·ÃÎÊkingkongÖ±²¥ÁË
+echo.&echo Èç¹ûÍ»È»Ä³Ïî¹¦ÄÜÈ±Ê§£¬»òÕßÎÞ·¨Õý³£·ÃÎÊ£¬Äú¿ÉÒÔBÕ¾Ë½ÐÅÎÒ£¬»òÕß Github ÉÏÌá½» Issues
+echo.&echo ×îÐÂ½Å±¾½«ÔÚ¸öÈËÖÃ¶¥¶¯Ì¬¡¢UPÊÓÆµ¼ò½é¡¢ÈºÎÄ¼þºÍ Github Í¬²½ÍÆËÍ
+echo.&echo Èç¹û¾õµÃ±¾½Å±¾¶ÔÄãÓÐÓÃ£¬Çëµã¸ö¹Ø×¢²¢ÇÒÒ»¼üÈýÁ¬°¡£¡
+choice /t 5 /d y /n >nul
+pause
+goto End
+
+:kingkongapp
+cls
+color 07
+echo.&echo Äúµ±Ç°ÊÇ·ñ¿ÉÒÔ¡¾Õý³£´ò¿ª²¢¼ÓÔØ www.kingkongapp.com¡¿
+echo.&echo ÇëÊ¹ÓÃChrome¡¢Firefox¡¢EdgeµÈä¯ÀÀÆ÷£¬¹ú²úä¯ÀÀÆ÷ÓÐ¿ÉÄÜ»áÖ÷¶¯À¹½Ø²¢±ê¼ÇÎªÎ£ÏÕÒ³Ãæ
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡Ôñ
+echo.&echo Y.ÊÇµÄ£¬ÎÒ¿ÉÒÔÕý³£´ò¿ª
+echo.&echo N.²»£¬ÎÒÎÞ·¨Õý³£´ò¿ª
+echo.&echo O.ÎÒ²»ÖªµÀ£¬´ò¿ªÈÃÎÒ¿´¿´£¨´ËÎª×ÖÄ¸O ²»ÊÇÊý×Ö0£©
+echo.&set /p choice=ÊäÈë Y »ò N »ò O ºó»Ø³µ£º
+
+if %choice%==Y goto kingkongapp-api
+if %choice%==y goto kingkongapp-api
+if %choice%==N goto G-Unlock1
+if %choice%==n goto G-Unlock1
+if %choice%==O goto G-Open1
+if %choice%==o goto G-Open1
+goto kingkongapp
+
+:kingkongapp-api
+cls
+color 70
+echo.&echo Äúµ±Ç°ÊÇ·ñ¿ÉÒÔÕý³£´ò¿ªºÍÏÔÊ¾¡¾¶þÎ¬Âë¡¿²¢ÇÒµÇÂ½
+echo.&echo µÇÂ¼¿òÔÚÍøÒ³ÓÒÉÏ½ÇÇëÊ¹ÓÃ ÀËlive APPÉ¨ÃèµÇÂ½
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡Ôñ
+echo.&echo Y.ÊÇµÄ£¬ÎÒ¿ÉÒÔÕý³£´ò¿ª
+echo.&echo N.²»£¬ÎÒÎÞ·¨Õý³£´ò¿ª
+echo.&echo O.ÎÒ²»ÖªµÀ£¬´ò¿ªÈÃÎÒ¿´¿´£¨´ËÎª×ÖÄ¸O ²»ÊÇÊý×Ö0£©
+echo.&set /p choice=ÊäÈë Y »ò N »ò O ºó»Ø³µ£º
+
+if %choice%==Y goto kingkongapp-danmu
+if %choice%==y goto kingkongapp-danmu
+if %choice%==N goto G-Api-app
+if %choice%==n goto G-Api-app
+if %choice%==O goto G-Open1
+if %choice%==o goto G-Open1
+goto kingkongapp-api
+
+:kingkongapp-danmu
+cls
+color 71
+echo.&echo Äúµ±Ç°ÊÇ·ñ¿ÉÒÔÕý³£ÏÔÊ¾²¢ÇÒ·¢ËÍ¡¾µ¯Ä»¡¿
+echo.&echo µ¯Ä»¿ò¼ÓÔØ½ÏÂý¿ÉÄÜÐèÒª¶à´ÎË¢ÐÂ
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡Ôñ
+echo.&echo Y.ÊÇµÄ£¬ÎÒ¿ÉÒÔÕý³£ÏÔÊ¾
+echo.&echo N.²»£¬ÎÒÎÞ·¨Õý³£ÏÔÊ¾
+echo.&echo O.ÎÒ²»ÖªµÀ£¬´ò¿ªÈÃÎÒ¿´¿´£¨´ËÎª×ÖÄ¸O ²»ÊÇÊý×Ö0£©
+echo.&set /p choice=ÊäÈë Y »ò N »ò O ºó»Ø³µ£º
+
+if %choice%==Y goto Guide2
+if %choice%==y goto Guide2
+if %choice%==N goto G-Danmu-app
+if %choice%==n goto G-Danmu-app
+if %choice%==O goto G-Open1
+if %choice%==o goto G-Open1
+goto kingkongapp-danmu
+
+:kingkongtw
+cls
+color 07
+echo.&echo Äúµ±Ç°ÊÇ·ñ¿ÉÒÔÕý³£¡¾´ò¿ª²¢¼ÓÔØ www.kingkong.com.tw¡¿
+echo.&echo ÇëÊ¹ÓÃChrome¡¢Firefox¡¢EdgeµÈä¯ÀÀÆ÷£¬¹ú²úä¯ÀÀÆ÷ÓÐ¿ÉÄÜ»áÖ÷¶¯À¹½Ø²¢±ê¼ÇÎªÎ£ÏÕÒ³Ãæ
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡Ôñ
+echo.&echo Y.ÊÇµÄ£¬ÎÒ¿ÉÒÔÕý³£´ò¿ª
+echo.&echo N.²»£¬ÎÒÎÞ·¨Õý³£´ò¿ª
+echo.&echo O.ÎÒ²»ÖªµÀ£¬´ò¿ªÈÃÎÒ¿´¿´£¨´ËÎª×ÖÄ¸O ²»ÊÇÊý×Ö0£©
+echo.&set /p choice=ÊäÈë Y »ò N »ò O ºó»Ø³µ£º
+
+if %choice%==Y goto kingkongtw-api
+if %choice%==y goto kingkongtw-api
+if %choice%==N goto G-Unlock
+if %choice%==n goto G-Unlock
+if %choice%==O goto G-Open1
+if %choice%==o goto G-Open1
+goto kingkongtw
+
+:kingkongtw-api
+cls
+color 70
+echo.&echo Äúµ±Ç°ÊÇ·ñ¿ÉÒÔÕý³£´ò¿ªºÍÏÔÊ¾¡¾¶þÎ¬Âë¡¿²¢ÇÒµÇÂ½
+echo.&echo µÇÂ¼¿òÔÚÍøÒ³ÓÒÉÏ½ÇÇëÊ¹ÓÃ ÀËlive APPÉ¨ÃèµÇÂ½
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡Ôñ
+echo.&echo Y.ÊÇµÄ£¬ÎÒ¿ÉÒÔÕý³£´ò¿ª
+echo.&echo N.²»£¬ÎÒÎÞ·¨Õý³£´ò¿ª
+echo.&echo O.ÎÒ²»ÖªµÀ£¬´ò¿ªÈÃÎÒ¿´¿´£¨´ËÎª×ÖÄ¸O ²»ÊÇÊý×Ö0£©
+echo.&set /p choice=ÊäÈë Y »ò N »ò O ºó»Ø³µ£º
+
+if %choice%==Y goto kingkongtw-danmu
+if %choice%==y goto kingkongtw-danmu
+if %choice%==N goto G-Api-tw
+if %choice%==n goto G-Api-tw
+if %choice%==O goto G-Open1
+if %choice%==o goto G-Open1
+goto kingkongtw-api
+
+:kingkongtw-danmu
+cls
+color 71
+echo.&echo Äúµ±Ç°ÊÇ·ñ¿ÉÒÔÕý³£ÏÔÊ¾²¢ÇÒ·¢ËÍ¡¾µ¯Ä»¡¿
+echo.&echo µ¯Ä»¿ò¼ÓÔØ½ÏÂý¿ÉÄÜÐèÒª¶à´ÎË¢ÐÂ
+echo --------------------------------------------------------------------------
+echo.&echo ÇëÑ¡Ôñ
+echo.&echo Y.ÊÇµÄ£¬ÎÒ¿ÉÒÔÕý³£ÏÔÊ¾
+echo.&echo N.²»£¬ÎÒÎÞ·¨Õý³£ÏÔÊ¾
+echo.&echo O.ÎÒ²»ÖªµÀ£¬´ò¿ªÈÃÎÒ¿´¿´£¨´ËÎª×ÖÄ¸O ²»ÊÇÊý×Ö0£©
+echo.&set /p choice=ÊäÈë Y »ò N »ò O ºó»Ø³µ£º
+
+if %choice%==Y goto Guide2
+if %choice%==y goto Guide2
+if %choice%==N goto G-Danmu-tw
+if %choice%==n goto G-Danmu-tw
+if %choice%==O goto G-Open1
+if %choice%==o goto G-Open1
+goto kingkongtw-danmu
+
+:G-Unlock
+cls
+echo.
+if not exist %file% (
+        type nul>%file%
+		echo %file%ÎÄ¼þ²»´æÔÚ£¬ÒÑ´´½¨¸ÃÎÄ¼þ£¡
+    ) else (
+		echo %file%ÎÄ¼þÒÑ´æÔÚ£¬ÎÞÐè´´½¨£¡	
+    )
+echo.&choice /t 2 /d y /n >nul
+
+(echo.) >> %file%
+(echo %a%) >> %file%
+(echo %b%) >> %file%
+(echo %c%) >> %file%
+(echo %d%) >> %file%
+
+choice /t 2 /d y /n >nul
+ipconfig /flushdns
+echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­¿ÉÒÔ´ò¿ªkingkongÁË,ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
+echo.&echo »¶Ó­Ö§³Ö¸¶µ¼µÄÖ±²¥¼ä https://www.kingkong.com.tw/2477024
+echo.&echo ¼´½«»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 5 /d y /n >nul
+goto kingkongtw
+
+:G-Unlock1
+cls
+echo.
+if not exist %file% (
+        type nul>%file%
+		echo %file%ÎÄ¼þ²»´æÔÚ£¬ÒÑ´´½¨¸ÃÎÄ¼þ£¡
+    ) else (
+		echo %file%ÎÄ¼þÒÑ´æÔÚ£¬ÎÞÐè´´½¨£¡	
+    )
+echo.&choice /t 2 /d y /n >nul
+
+(echo.) >> %file%
+(echo %e%) >> %file%
+(echo %f%) >> %file%
+
+choice /t 2 /d y /n >nul
+ipconfig /flushdns
+echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­¿ÉÒÔ´ò¿ªkingkongÁË,ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
+echo.&echo »¶Ó­Ö§³Ö¸¶µ¼µÄÖ±²¥¼ä https://www.kingkongapp.com/2477024
+echo.&echo ¼´½«»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 5 /d y /n >nul
+goto kingkongapp
+
+:G-Api-app
+cls
+echo.
+if not exist %file% (
+        type nul>%file%
+		echo %file%ÎÄ¼þ²»´æÔÚ£¬ÒÑ´´½¨¸ÃÎÄ¼þ£¡
+    ) else (
+		echo %file%ÎÄ¼þÒÑ´æÔÚ£¬ÎÞÐè´´½¨£¡	
+    )
+
+echo.&choice /t 2 /d y /n >nul
+
+(echo.) >> %file%
+(echo %g%) >> %file%
+
+choice /t 2 /d y /n >nul
+ipconfig /flushdns
+echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­³É¹¦ÓÅ»¯apiÁË,ÇëÔÙ´Î²âÊÔÊÇ·ñ¿ÉÒÔ²é¿´µÇÂ¼¿ò
+echo.&echo ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
+echo.&echo ÔËÐÐ³É¹¦,½«»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 5 /d y /n >nul
+goto kingkongapp-api
+
+:G-Api-tw
+cls
+echo.
+if not exist %file% (
+        type nul>%file%
+		echo %file%ÎÄ¼þ²»´æÔÚ£¬ÒÑ´´½¨¸ÃÎÄ¼þ£¡
+    ) else (
+		echo %file%ÎÄ¼þÒÑ´æÔÚ£¬ÎÞÐè´´½¨£¡	
+    )
+
+echo.&choice /t 2 /d y /n >nul
+
+(echo.) >> %file%
+(echo %g%) >> %file%
+
+choice /t 2 /d y /n >nul
+ipconfig /flushdns
+echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­³É¹¦ÓÅ»¯apiÁË,ÇëÔÙ´Î²âÊÔÊÇ·ñ¿ÉÒÔ²é¿´µÇÂ¼¿ò
+echo.&echo ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
+echo.&echo ÔËÐÐ³É¹¦,½«»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 5 /d y /n >nul
+goto kingkongtw-api
+
+:G-Danmu-app
+cls
+echo.
+if not exist %file% (
+        type nul>%file%
+		echo %file%ÎÄ¼þ²»´æÔÚ£¬ÒÑ´´½¨¸ÃÎÄ¼þ£¡
+    ) else (
+		echo %file%ÎÄ¼þÒÑ´æÔÚ£¬ÎÞÐè´´½¨£¡	
+    )
+echo.&choice /t 2 /d y /n >nul
+
+(echo.) >> %file%
+(echo %h%) >> %file%
+(echo %i%) >> %file%
+(echo %j%) >> %file%
+(echo %k%) >> %file%
+(echo %l%) >> %file%
+(echo %m%) >> %file%
+(echo %n%) >> %file%
+(echo %o%) >> %file%
+(echo %p%) >> %file%
+
+choice /t 2 /d y /n >nul
+ipconfig /flushdns
+echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­³É¹¦ÓÅ»¯µ¯Ä»ÁË,ÇëÔÙ´Î²âÊÔÊÇ·ñ¿ÉÒÔ²é¿´µ¯Ä»
+echo.&echo ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
+echo.&echo ÔËÐÐ³É¹¦,½«»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 5 /d y /n >nul
+goto kingkongapp-danmu
+
+:G-Danmu-tw
+cls
+echo.
+if not exist %file% (
+        type nul>%file%
+		echo %file%ÎÄ¼þ²»´æÔÚ£¬ÒÑ´´½¨¸ÃÎÄ¼þ£¡
+    ) else (
+		echo %file%ÎÄ¼þÒÑ´æÔÚ£¬ÎÞÐè´´½¨£¡	
+    )
+echo.&choice /t 2 /d y /n >nul
+
+(echo.) >> %file%
+(echo %h%) >> %file%
+(echo %i%) >> %file%
+(echo %j%) >> %file%
+(echo %k%) >> %file%
+(echo %l%) >> %file%
+(echo %m%) >> %file%
+(echo %n%) >> %file%
+(echo %o%) >> %file%
+(echo %p%) >> %file%
+
+choice /t 2 /d y /n >nul
+ipconfig /flushdns
+echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­³É¹¦ÓÅ»¯µ¯Ä»ÁË,ÇëÔÙ´Î²âÊÔÊÇ·ñ¿ÉÒÔ²é¿´µ¯Ä»
+echo.&echo ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
+echo.&echo ÔËÐÐ³É¹¦,½«»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 5 /d y /n >nul
+goto kingkongtw-danmu
+
+:G-Restore
+cls
+echo.&echo ´Ë²Ù×÷»á½« hosts ÎÄ¼þ»¹Ô­ÎªWindowsÄ¬ÈÏ×´Ì¬£¬Èç¹û¶Ô¸ÃÎÄ¼þÓÐ¹ýÆäËûÐÞ¸ÄµÄÇë¡¾ÌáÇ°±¸·Ý¡¿¡£
+echo.&echo Èç¹ûÐèÒª±¸·ÝÇëÖ±½ÓÓÒÉÏ½Ç¹Ø±Õ½Å±¾£¬±¸·ÝºóÔÙ´ÎÔËÐÐ£¬½Å±¾µ½´Ë²¢Ã»ÓÐ½øÐÐÈÎºÎ²Ù×÷
+echo.&echo ²»ÖªµÀÎÒÔÚËµÊ²Ã´µÄ¿ÉÒÔÖ±½Ó½øÐÐÏÂÒ»²½²Ù×÷
+echo.&pause
+
+if not exist %file% (
+        echo %file%ÎÄ¼þÒÑ»Ö¸´
+    ) else (
+	    del /a /f /q %file%
+		
+    )
+echo.&type nul>%file%
+echo »Ö¸´Íê³É,½«»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 3 /d y /n >nul
+goto Guide1
+
+:G-Open
+cls
+echo.&echo ÍøÒ³¼´½«´ò¿ª,ÉÔºó»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 3 /d y /n >nul
+explorer "https://www.kingkong.com.tw/"
+goto kingkongapptw
+
+:G-Open1
+cls
+echo.&echo ÍøÒ³¼´½«´ò¿ª,ÉÔºó»Øµ½Ñ¡Ôñ½çÃæ
+choice /t 3 /d y /n >nul
+explorer "https://www.kingkongapp.com/"
+goto kingkongapp
+
+:Meun
+cls
+
+echo.&echo ½ð¸ÕÖ±²¥Ö÷Ò³ÓÐ www.kingkong.com.tw ºÍ www.kingkongapp.com
 echo.&echo ÕâÁ½¸ö¿´µ½µÄÊÇÏàÍ¬µÄÖ±²¥ÄÚÈÝ£¬Çë¸ù¾Ý×Ô¼ºÏ²ºÃÑ¡Ôñ
 echo.&echo £¨ÍÆ¼öÊ¹ÓÃwww.kingkongapp.com£©
 echo.&echo Èç¹ûÉÏÃæµÄÄÜ¡¾Õý³£Ê¹ÓÃ¡¿¾Í¡¾±ðÓÅ»¯¡¿,Èç¹û²»ÄÜÔÙ¸ù¾ÝÐèÒªÈ¥¡¾Ñ¡Ôñ¡¿
@@ -91,9 +462,12 @@ if %choice%==5 goto Open
 if %choice%==6 goto Open1
 if %choice%==7 goto Restore
 if %choice%==0 goto End
+if %choice%==debug goto Debug
+goto Meun
 
 :Unlock
 cls
+
 echo.
 if not exist %file% (
         type nul>%file%
@@ -115,10 +489,11 @@ echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­¿ÉÒÔ´ò¿ªkingkongÁË,ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ
 echo.&echo »¶Ó­Ö§³Ö¸¶µ¼µÄÖ±²¥¼ä https://www.kingkong.com.tw/2477024
 echo.&echo ¼´½«»Øµ½Ñ¡Ôñ½çÃæ
 choice /t 5 /d y /n >nul
-goto Start
+goto Meun
 
 :Unlock1
 cls
+
 echo.
 if not exist %file% (
         type nul>%file%
@@ -138,10 +513,11 @@ echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­¿ÉÒÔ´ò¿ªkingkongÁË,ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ
 echo.&echo »¶Ó­Ö§³Ö¸¶µ¼µÄÖ±²¥¼ä https://www.kingkongapp.com/2477024
 echo.&echo ¼´½«»Øµ½Ñ¡Ôñ½çÃæ
 choice /t 5 /d y /n >nul
-goto Start
+goto Meun
 
 :Api
 cls
+
 echo.
 if not exist %file% (
         type nul>%file%
@@ -161,10 +537,11 @@ echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­³É¹¦ÓÅ»¯apiÁË,ÇëÔÙ´Î²âÊÔÊÇ·ñ¿ÉÒÔ²é¿´µÇÂ¼¿
 echo.&echo ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
 echo.&echo ÔËÐÐ³É¹¦,½«»Øµ½Ñ¡Ôñ½çÃæ
 choice /t 5 /d y /n >nul
-goto Start
+goto Meun
 
 :Danmu
 cls
+
 echo.
 if not exist %file% (
         type nul>%file%
@@ -177,7 +554,7 @@ echo.&choice /t 2 /d y /n >nul
 (echo.) >> %file%
 (echo %h%) >> %file%
 (echo %i%) >> %file%
-(echo %g%) >> %file%
+(echo %j%) >> %file%
 (echo %k%) >> %file%
 (echo %l%) >> %file%
 (echo %m%) >> %file%
@@ -191,17 +568,18 @@ echo.&echo µ±Äã¿´µ½ÕâÐÐ×ÖµÄÊ±ºòËµÃ÷ÒÑ¾­³É¹¦ÓÅ»¯µ¯Ä»ÁË,ÇëÔÙ´Î²âÊÔÊÇ·ñ¿ÉÒÔ²é¿´µ¯Ä»
 echo.&echo ÈôÌáÊ¾¾Ü¾ø·ÃÎÊÇë×Ô²éÊÇ·ñ¿ªÆôÁËÉ±ÈíµÈ
 echo.&echo ÔËÐÐ³É¹¦,½«»Øµ½Ñ¡Ôñ½çÃæ
 choice /t 5 /d y /n >nul
-goto Start
+goto Meun
 
 :Restore
 cls
+
 echo.&echo ´Ë²Ù×÷»á½« hosts ÎÄ¼þ»¹Ô­ÎªWindowsÄ¬ÈÏ×´Ì¬£¬Èç¹û¶Ô¸ÃÎÄ¼þÓÐ¹ýÆäËûÐÞ¸ÄµÄÇë¡¾ÌáÇ°±¸·Ý¡¿¡£
 echo.&echo Èç¹ûÐèÒª±¸·ÝÇëÖ±½ÓÓÒÉÏ½Ç¹Ø±Õ½Å±¾£¬±¸·ÝºóÔÙ´ÎÔËÐÐ£¬½Å±¾µ½´Ë²¢Ã»ÓÐ½øÐÐÈÎºÎ²Ù×÷
 echo.&echo ²»ÖªµÀÎÒÔÚËµÊ²Ã´µÄ¿ÉÒÔÖ±½Ó½øÐÐÏÂÒ»²½²Ù×÷
 echo.&pause
 
 if not exist %file% (
-        echo %file%ÎÄ¼þ²»´æÔÚ£¬²»ÓÃ»Ö¸´
+        echo %file%ÎÄ¼þÒÑ»Ö¸´
     ) else (
 	    del /a /f /q %file%
 		
@@ -209,21 +587,26 @@ if not exist %file% (
 echo.&type nul>%file%
 echo »Ö¸´Íê³É,½«»Øµ½Ñ¡Ôñ½çÃæ
 choice /t 3 /d y /n >nul
-goto Start
+goto Meun
 
 :Open
 cls
+
 echo.&echo ÍøÒ³¼´½«´ò¿ª,ÉÔºó»Øµ½Ñ¡Ôñ½çÃæ
 choice /t 3 /d y /n >nul
 explorer "https://www.kingkong.com.tw/"
-goto Start
+goto Meun
 
 :Open1
 cls
+
 echo.&echo ÍøÒ³¼´½«´ò¿ª,ÉÔºó»Øµ½Ñ¡Ôñ½çÃæ
 choice /t 3 /d y /n >nul
 explorer "https://www.kingkongapp.com/"
-goto Start
+goto Meun
 
 :End
 exit
+
+:Debug
+Start notepad %file%

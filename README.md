@@ -1,7 +1,10 @@
 # Easy2Kingkong
+
 ## 简介
-本脚本由付导的录播组制作  当前版本为 V1.9 （20200403）
-- 1.将脚本重写，细化可优化选项，提供更多的选择
+
+本脚本由付导的录播组制作  当前版本为 V2.0 （20200408）
+
+- 1.加入向导模式，一步步教你怎么使用脚本
 
 - 2.优化连接速度
 
@@ -9,7 +12,7 @@
 
 - 4.给部分打不开登录框和弹幕的人一个Plan B，要是还打不开请自行上梯
 
-- 5.加快[未污染地址](https://www.kingkongapp.com/)连接速度(其实有些地区已被污染了，若打不开请按指令运行脚本)
+- 5.修复之前因写错而导致无法登陆的bug
 
 - 6.更改脚本名称为全英文,防止运行脚本时闪退
 
@@ -33,7 +36,7 @@ www.kingkong.com.tw 上的图片可能无法正常显示，这个我试了好久
 
 此脚本【运行一次】后就不用再打开了
 ## 下载
-[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/[度盘](https://pan.baidu.com/s/1Wv73gyQkE2HVVhewhbgFWA) 提取码: aili
+[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/[度盘] 提取码: aili
 
 ## 补充
 
