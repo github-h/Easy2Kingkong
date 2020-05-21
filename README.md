@@ -26,7 +26,7 @@
 
 请勿二改 大量传播 本脚本只解决当前的DNS污染问题  
 
-该脚本失效可以在 GitHub上提交 [Issues](https://github.com/g1thub-h/Easy2Kingkong/issues) 
+该脚本失效可以在 GitHub上提交 [Issues](https://github.com/github-h/Easy2Kingkong/issues) 
 
 最新脚本将在群动态、[UP教程视频简介](https://www.bilibili.com/video/av55984281)和 Github 同步推送
 
@@ -43,7 +43,7 @@
 此脚本【运行一次】后就不用再打开了
 ## 下载
 
-[Github](https://github.com/g1thub-h/Easy2Kingkong/releases)/~~[度盘](https://pan.baidu.com/s/1ckTBmmMe4O1hNC82EkE-Ow)~~ 提取码: aili
+[Github](https://github.com/github-h/Easy2Kingkong/releases)/~~[度盘]()~~ 提取码: aili
 
 ## 补充
 
@@ -72,6 +72,6 @@
 
 还顺手写了一个小玩意
 
-[修复黎明杀机【解锁帧数】和【解决当前杀鸡画质高糊】的问题（也就是关闭默认抗锯齿的效果）](https://github.com/g1thub-h/Patch_DBD)
+[修复黎明杀机【解锁帧数】和【解决当前杀鸡画质高糊】的问题（也就是关闭默认抗锯齿的效果）](https://github.com/github-h/Patch_DBD)
 
 喜欢的别忘记点个⭐
